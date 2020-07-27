@@ -180,9 +180,15 @@ local function SetupChats()
 end
 
 
-SLASH_CHARACTERINITIALIZATION1 = "/character-initialization" 
-SLASH_CHARACTERINITIALIZATION2 = "/ci"
-SlashCmdList["character-initialization", "ci"] = function(msg)
+SlashCmdList["CHARACTER_INITIALIZATION_SLASHCMD"] = function(msg)
 	SetupUI()
 	SetupChats()
 end
+
+SLASH_CHARACTER_INITIALIZATION_SLASHCMD1 = "/character-initialization" 
+SLASH_CHARACTER_INITIALIZATION_SLASHCMD2 = "/ci"
+
+
+
+
+
