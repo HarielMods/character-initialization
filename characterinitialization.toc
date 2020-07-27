@@ -1,0 +1,7 @@
+## Interface: 80300
+## Title: Character Initialization
+## Author: Hariel
+## Notes: A quick and dirty addon to set variables and chat windows consistently between characters.
+## Version: 0.1.0
+
+characterinitialization.lua
