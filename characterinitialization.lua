@@ -179,8 +179,9 @@ local function SetupChats()
 	ReloadUI()	
 end
 
-SLASH_BS1 = "/character-initialization"
-SLASH_BS2 = "/ci"
+
+SLASH_CHARACTERINITIALIZATION1 = "/character-initialization" 
+SLASH_CHARACTERINITIALIZATION2 = "/ci"
 SlashCmdList["character-initialization", "ci"] = function(msg)
 	SetupUI()
 	SetupChats()
