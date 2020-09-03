@@ -64,7 +64,7 @@ local function SetupUI()
 	
 end
 
-local function SetupChats()
+local function SetupChatWindows()
   TRADE, GENERAL, L_CHAT_DEFENSE, L_CHAT_RECRUITMENT, L_CHAT_LFG = 'TRADE', 'GENERAL', 'L_CHAT_DEFENSE', 'L_CHAT_RECRUITMENT', 'L_CHAT_LFG'
 	FCF_ResetChatWindows()
 	FCF_SetLocked(ChatFrame1, 1)
@@ -94,10 +94,10 @@ local function SetupChats()
 		if i == 2 then FCF_SetWindowName(frame, "Log") end
 		if i == 3 then FCF_SetWindowName(frame, "Whisper") end
 		-- Set font sizes
-		if i == 1 then FCF_SetChatWindowFontSize(nil, frame, 14) end
-		if i == 2 then FCF_SetChatWindowFontSize(nil, frame, 12) end
-		if i == 3 then FCF_SetChatWindowFontSize(nil, frame, 14) end
-		if i == 4 then FCF_SetChatWindowFontSize(nil, frame, 12) end
+		if i == 1 then FCF_SetChatWindowFontSize(nil, frame, 16) end
+		if i == 2 then FCF_SetChatWindowFontSize(nil, frame, 14) end
+		if i == 3 then FCF_SetChatWindowFontSize(nil, frame, 16) end
+		if i == 4 then FCF_SetChatWindowFontSize(nil, frame, 14) end
 		
 	end
 
@@ -141,6 +141,8 @@ local function SetupChats()
 	ChatFrame_AddMessageGroup(ChatFrame4, "COMBAT_FACTION_CHANGE")
 	ChatFrame_AddMessageGroup(ChatFrame4, "LOOT")
 	ChatFrame_AddMessageGroup(ChatFrame4, "MONEY")
+	ChatFrame_AddMessageGroup(ChatFrame4, "CURRENCY")
+	ChatFrame_AddMessageGroup(ChatFrame4, "SKILL")
 	ChatFrame_AddMessageGroup(ChatFrame4, "EMOTE")
 	ChatFrame_AddMessageGroup(ChatFrame4, "YELL")
 	ChatFrame_AddMessageGroup(ChatFrame4, "MONSTER_SAY")
@@ -182,7 +184,7 @@ end
 
 SlashCmdList["CHARACTER_INITIALIZATION_SLASHCMD"] = function(msg)
 	SetupUI()
-	SetupChats()
+	SetupChatWindows()
 end
 
 SLASH_CHARACTER_INITIALIZATION_SLASHCMD1 = "/character-initialization" 

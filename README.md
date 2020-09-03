@@ -9,3 +9,8 @@ An addon to set variables and create chat windows consistently between character
 /character-initialization
 ```
 
+
+## Reference
+
+https://wow.gamepedia.com/World_of_Warcraft_API
+
